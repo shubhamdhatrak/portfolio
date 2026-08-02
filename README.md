@@ -1,4 +1,4 @@
-# Shubham Dhatrak — Portfolio
+# Shubham Dhatrak, Portfolio
 
 Public portfolio site for [shubhamdhatrak.github.io/portfolio](https://shubhamdhatrak.github.io/portfolio/).
 
