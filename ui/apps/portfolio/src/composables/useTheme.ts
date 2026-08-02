@@ -4,7 +4,7 @@ export type Theme = 'light' | 'dark';
 
 const STORAGE_KEY = 'portfolio-theme';
 
-const theme = ref<Theme>('light');
+const theme = ref<Theme>('dark');
 
 function getStoredTheme(): Theme | null {
   const stored = localStorage.getItem(STORAGE_KEY);
@@ -15,7 +15,7 @@ function getStoredTheme(): Theme | null {
 }
 
 export function resolveTheme(): Theme {
-  return getStoredTheme() ?? 'light';
+  return getStoredTheme() ?? 'dark';
 }
 
 export function applyTheme(next: Theme) {

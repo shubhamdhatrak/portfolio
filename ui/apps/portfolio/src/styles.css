@@ -1,31 +1,6 @@
 @import 'tailwindcss';
 
 :root,
-[data-theme='light'] {
-  color-scheme: light;
-
-  --app-bg: #ffffff;
-  --app-surface: #ffffff;
-  --app-border: #e2e8f0;
-  --app-border-strong: #cbd5e1;
-  --app-border-muted: #94a3b8;
-  --app-text: #0f172a;
-  --app-text-subtle: #334155;
-  --app-text-muted: #475569;
-  --app-text-faint: #64748b;
-  --app-text-dim: #cbd5e1;
-  --app-text-badge: #475569;
-  --app-overlay: rgb(15 23 42 / 0.04);
-  --app-overlay-strong: rgb(15 23 42 / 0.06);
-  --app-overlay-subtle: rgb(15 23 42 / 0.02);
-  --app-overlay-medium: rgb(15 23 42 / 0.03);
-  --app-overlay-badge: rgb(15 23 42 / 0.05);
-  --app-inactive-dot: #cbd5e1;
-  --app-logo-ring: #e2e8f0;
-  --app-on-accent: #0f172a;
-  --app-fab-shadow: rgb(15 23 42 / 0.12);
-}
-
 [data-theme='dark'] {
   color-scheme: dark;
 
@@ -49,6 +24,31 @@
   --app-logo-ring: #1e293b;
   --app-on-accent: #0f172a;
   --app-fab-shadow: rgb(0 0 0 / 0.35);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+
+  --app-bg: #ffffff;
+  --app-surface: #ffffff;
+  --app-border: #e2e8f0;
+  --app-border-strong: #cbd5e1;
+  --app-border-muted: #94a3b8;
+  --app-text: #0f172a;
+  --app-text-subtle: #334155;
+  --app-text-muted: #475569;
+  --app-text-faint: #64748b;
+  --app-text-dim: #cbd5e1;
+  --app-text-badge: #475569;
+  --app-overlay: rgb(15 23 42 / 0.04);
+  --app-overlay-strong: rgb(15 23 42 / 0.06);
+  --app-overlay-subtle: rgb(15 23 42 / 0.02);
+  --app-overlay-medium: rgb(15 23 42 / 0.03);
+  --app-overlay-badge: rgb(15 23 42 / 0.05);
+  --app-inactive-dot: #cbd5e1;
+  --app-logo-ring: #e2e8f0;
+  --app-on-accent: #0f172a;
+  --app-fab-shadow: rgb(15 23 42 / 0.12);
 }
 
 @theme {
