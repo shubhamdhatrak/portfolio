@@ -6,11 +6,11 @@ defineProps<{
 }>();
 
 const badgeClass: Record<SkillBadge['type'], string> = {
-  core: 'bg-[var(--chapter-accent)] text-slate-900',
-  platform: 'border border-slate-600 bg-transparent text-slate-300',
+  core: 'bg-[var(--chapter-accent)] text-app-on-accent',
+  platform: 'border border-app-border-muted bg-transparent text-app-text-subtle',
   scale:
-    'border border-[var(--chapter-accent-muted)] bg-white/8 font-semibold text-[var(--chapter-accent)]',
-  protocol: 'border border-slate-500 bg-white/6 text-[0.6875rem] text-slate-200',
+    'border border-[var(--chapter-accent-muted)] bg-app-overlay-strong font-semibold text-[var(--chapter-accent)]',
+  protocol: 'border border-app-border-muted bg-app-overlay-badge text-[0.6875rem] text-app-text-badge',
 };
 </script>
 

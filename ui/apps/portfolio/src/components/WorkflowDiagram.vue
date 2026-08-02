@@ -48,10 +48,10 @@ defineProps<{
       />
       <rect x="12" y="14" width="24" height="24" rx="6" fill="rgba(139, 92, 246, 0.2)" />
       <path d="M24 20 L20 28 H24 L22 34 L28 26 H24 Z" fill="var(--chapter-accent)" />
-      <text x="44" y="26" class="fill-slate-50 font-[inherit] text-[9px] font-semibold">
+      <text x="44" y="26" class="fill-app-text font-[inherit] text-[9px] font-semibold">
         Trigger
       </text>
-      <text x="44" y="38" class="fill-slate-400 font-[inherit] text-[7.5px]">Event</text>
+      <text x="44" y="38" class="fill-app-text-muted font-[inherit] text-[7.5px]">Event</text>
     </g>
 
     <g transform="translate(128, 14)">
@@ -73,10 +73,10 @@ defineProps<{
         stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <text x="44" y="26" class="fill-slate-50 font-[inherit] text-[9px] font-semibold">
+      <text x="44" y="26" class="fill-app-text font-[inherit] text-[9px] font-semibold">
         Condition
       </text>
-      <text x="44" y="38" class="fill-slate-400 font-[inherit] text-[7.5px]">If / Then</text>
+      <text x="44" y="38" class="fill-app-text-muted font-[inherit] text-[7.5px]">If / Then</text>
     </g>
 
     <g transform="translate(248, 14)">
@@ -90,10 +90,10 @@ defineProps<{
       />
       <rect x="12" y="14" width="24" height="24" rx="6" fill="rgba(139, 92, 246, 0.2)" />
       <path d="M20 22 L28 26 L20 30 Z" fill="var(--chapter-accent)" />
-      <text x="44" y="26" class="fill-slate-50 font-[inherit] text-[9px] font-semibold">
+      <text x="44" y="26" class="fill-app-text font-[inherit] text-[9px] font-semibold">
         Action
       </text>
-      <text x="44" y="38" class="fill-slate-400 font-[inherit] text-[7.5px]">Execute</text>
+      <text x="44" y="38" class="fill-app-text-muted font-[inherit] text-[7.5px]">Execute</text>
     </g>
   </svg>
 </template>

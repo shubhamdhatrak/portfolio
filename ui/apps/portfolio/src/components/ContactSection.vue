@@ -7,13 +7,13 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <ContentSection id="contact" title="Contact" compact-title class="text-center">
-    <p class="mb-6 text-base text-slate-400">
+    <p class="mb-6 text-base text-app-text-muted">
       Interested in working together? Reach out via email or connect on LinkedIn.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a
         :href="`mailto:${profile.email}`"
-        class="inline-block rounded-lg bg-theme-accent px-6 py-3 text-[0.9375rem] font-medium text-slate-900 transition-all duration-200 hover:brightness-110"
+        class="inline-block rounded-lg bg-theme-accent px-6 py-3 text-[0.9375rem] font-medium text-app-on-accent transition-all duration-200 hover:brightness-110"
       >
         {{ profile.email }}
       </a>
@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear();
         :href="profile.linkedin"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-block rounded-lg border border-slate-700 bg-transparent px-6 py-3 text-[0.9375rem] font-medium text-slate-50 transition-all duration-200 hover:border-slate-500 hover:bg-white/5"
+        class="inline-block rounded-lg border border-app-border-strong bg-transparent px-6 py-3 text-[0.9375rem] font-medium text-app-text transition-all duration-200 hover:border-app-border-muted hover:bg-app-overlay"
       >
         LinkedIn
       </a>
@@ -29,29 +29,29 @@ const currentYear = new Date().getFullYear();
         :href="profile.github"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-block rounded-lg border border-slate-700 bg-transparent px-6 py-3 text-[0.9375rem] font-medium text-slate-50 transition-all duration-200 hover:border-slate-500 hover:bg-white/5"
+        class="inline-block rounded-lg border border-app-border-strong bg-transparent px-6 py-3 text-[0.9375rem] font-medium text-app-text transition-all duration-200 hover:border-app-border-muted hover:bg-app-overlay"
       >
         GitHub
       </a>
     </div>
   </ContentSection>
 
-  <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+  <footer class="border-t border-app-border py-8 text-center text-sm text-app-text-faint">
     <p>&copy; {{ currentYear }} Designed & Built by {{ profile.name }}</p>
     <p class="mt-2">
       <a
         :href="profile.github + '/portfolio'"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-slate-500 transition-colors duration-200 hover:text-theme-accent"
+        class="text-app-text-faint transition-colors duration-200 hover:text-theme-accent"
       >
         Source
       </a>
-      <span class="mx-2 text-slate-700">·</span>
+      <span class="mx-2 text-app-text-dim">·</span>
       <a
         href="https://shubhamdhatrak.github.io/portfolio/"
         rel="noopener noreferrer"
-        class="text-slate-500 transition-colors duration-200 hover:text-theme-accent"
+        class="text-app-text-faint transition-colors duration-200 hover:text-theme-accent"
       >
         Portfolio
       </a>

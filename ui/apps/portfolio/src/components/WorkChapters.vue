@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <section class="pb-8" id="work">
-    <h2 class="mb-8 text-[1.75rem] font-bold tracking-tight text-slate-50">Experience</h2>
+    <h2 class="mb-8 text-[1.75rem] font-bold tracking-tight text-app-text">Experience</h2>
 
     <div class="flex flex-col">
       <div

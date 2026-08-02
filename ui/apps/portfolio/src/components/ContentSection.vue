@@ -7,9 +7,9 @@ defineProps<{
 </script>
 
 <template>
-  <section class="border-t border-slate-800 py-16" :id="id">
+  <section class="border-t border-app-border py-16" :id="id">
     <h2
-      class="text-[1.75rem] font-bold tracking-tight text-slate-50"
+      class="text-[1.75rem] font-bold tracking-tight text-app-text"
       :class="compactTitle ? 'mb-4' : 'mb-8'"
     >
       {{ title }}
