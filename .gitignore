@@ -1,0 +1,56 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Node.js / JavaScript / Vue.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+yarn.lock
+coverage/
+.vscode/
+.idea/
+
+# Vue CLI
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# HTML / CSS
+*.css.map
+*.html.map
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+.env
+.env.*
+.Python
+migrations/
+
+# Golang
+*.exe
+*.out
+*.log
+*.mod
+*.sum
+vendor/
+
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
