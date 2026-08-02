@@ -21,7 +21,7 @@ const emit = defineEmits<{
       v-for="(chapter, index) in chapters"
       :key="chapter.id"
       type="button"
-      class="group flex cursor-pointer items-center gap-2.5 border-none bg-transparent py-1.5 text-left font-inherit transition-opacity max-lg:rounded-md max-lg:border max-lg:border-slate-800 max-lg:bg-white/4 max-lg:px-2 max-lg:py-1"
+      class="group flex cursor-pointer items-center gap-2.5 border-none bg-transparent py-1.5 text-left font-inherit transition-opacity max-lg:rounded-md max-lg:border max-lg:border-app-border max-lg:bg-app-overlay-medium max-lg:px-2 max-lg:py-1"
       :class="activeChapterIndex === index ? 'max-lg:border-[var(--rail-accent)]' : ''"
       :style="
         activeChapterIndex === index
@@ -31,7 +31,7 @@ const emit = defineEmits<{
       @click="emit('navigate', index)"
     >
       <span
-        class="size-2 shrink-0 rounded-full bg-slate-700 transition-all duration-400"
+        class="size-2 shrink-0 rounded-full bg-app-inactive-dot transition-all duration-400"
         :class="activeChapterIndex === index ? 'scale-[1.3]' : ''"
         :style="
           activeChapterIndex === index
@@ -40,8 +40,8 @@ const emit = defineEmits<{
         "
       />
       <span
-        class="text-[0.8125rem] leading-snug text-slate-500 transition-[color,font-weight] duration-400 group-hover:text-slate-300"
-        :class="activeChapterIndex === index ? 'font-medium text-slate-50' : ''"
+        class="text-[0.8125rem] leading-snug text-app-text-faint transition-[color,font-weight] duration-400 group-hover:text-app-text-subtle"
+        :class="activeChapterIndex === index ? 'font-medium text-app-text' : ''"
       >
         {{ getThemeLabel(chapter.theme) }}
       </span>

@@ -30,7 +30,7 @@ watch(
     <span class="text-rose-400">
       {{ before }}
     </span>
-    <span class="text-slate-500">→</span>
+    <span class="text-app-text-faint">→</span>
     <span
       class="text-[var(--chapter-accent)] opacity-0 transition-opacity duration-400 motion-reduce:opacity-100"
       :class="{ 'opacity-100': showAfter }"

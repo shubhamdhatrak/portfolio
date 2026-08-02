@@ -6,12 +6,13 @@ import WorkChapters from './WorkChapters.vue';
 import SkillsSection from './SkillsSection.vue';
 import EducationCard from './EducationCard.vue';
 import ContactSection from './ContactSection.vue';
+import ColorModeToggle from './ColorModeToggle.vue';
 
 const { activeChapterIndex, registerChapter, scrollToChapter } = useActiveChapter();
 </script>
 
 <template>
-  <div class="grid min-h-screen grid-cols-1 bg-slate-900 lg:grid-cols-[minmax(280px,38%)_1fr]">
+  <div class="grid min-h-screen grid-cols-1 bg-app-bg lg:grid-cols-[minmax(280px,38%)_1fr]">
     <Sidebar
       :chapters="workChapters"
       :active-chapter-index="activeChapterIndex"
@@ -24,5 +25,7 @@ const { activeChapterIndex, registerChapter, scrollToChapter } = useActiveChapte
       <EducationCard />
       <ContactSection />
     </main>
+
+    <ColorModeToggle />
   </div>
 </template>

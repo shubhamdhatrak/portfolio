@@ -25,7 +25,7 @@ const { isVisible, rootRef } = useInView();
     <div class="border-l-2 border-[var(--chapter-accent)] pl-6">
       <div v-if="chapter.status === 'current'" class="mb-4 flex items-center gap-3">
         <span
-          class="rounded-full bg-[var(--chapter-accent)] px-2 py-0.5 text-[0.6875rem] font-semibold tracking-wide text-slate-900 uppercase"
+          class="rounded-full bg-[var(--chapter-accent)] px-2 py-0.5 text-[0.6875rem] font-semibold tracking-wide text-app-on-accent uppercase"
         >
           Current
         </span>
@@ -34,16 +34,16 @@ const { isVisible, rootRef } = useInView();
       <div class="mb-5 flex items-start gap-4">
         <ThemeIcon :theme="chapter.theme" />
         <div>
-          <h3 class="mb-1 text-xl font-bold tracking-tight text-slate-50 sm:text-2xl">
+          <h3 class="mb-1 text-xl font-bold tracking-tight text-app-text sm:text-2xl">
             {{ chapter.title }}
           </h3>
           <p class="mb-1.5 text-sm font-medium text-[var(--chapter-accent)]">
             {{ chapter.employer }}
-            <span v-if="chapter.period" class="font-normal text-slate-400">
+            <span v-if="chapter.period" class="font-normal text-app-text-muted">
               · {{ chapter.period }}
             </span>
           </p>
-          <p class="text-[0.9375rem] leading-normal text-slate-400">{{ chapter.hook }}</p>
+          <p class="text-[0.9375rem] leading-normal text-app-text-muted">{{ chapter.hook }}</p>
         </div>
       </div>
 
@@ -57,13 +57,13 @@ const { isVisible, rootRef } = useInView();
         <span
           v-for="label in chapter.domainLabels"
           :key="label"
-          class="rounded-md border border-slate-700 bg-white/6 px-2.5 py-1 text-xs text-slate-300"
+          class="rounded-md border border-app-border-strong bg-app-overlay-badge px-2.5 py-1 text-xs text-app-text-subtle"
         >
           {{ label }}
         </span>
       </div>
 
-      <p class="mb-4 text-[0.9375rem] leading-relaxed text-slate-300">
+      <p class="mb-4 text-[0.9375rem] leading-relaxed text-app-text-subtle">
         {{ chapter.description }}
       </p>
 
@@ -71,7 +71,7 @@ const { isVisible, rootRef } = useInView();
         <li
           v-for="item in chapter.impact"
           :key="item"
-          class="relative mb-2 pl-5 text-sm leading-normal text-slate-400 before:absolute before:left-0 before:text-[var(--chapter-accent)] before:content-['▸']"
+          class="relative mb-2 pl-5 text-sm leading-normal text-app-text-muted before:absolute before:left-0 before:text-[var(--chapter-accent)] before:content-['▸']"
         >
           {{ item }}
         </li>
@@ -79,7 +79,7 @@ const { isVisible, rootRef } = useInView();
 
       <div>
         <p
-          class="mb-2 text-xs font-semibold tracking-wider text-slate-500 uppercase"
+          class="mb-2 text-xs font-semibold tracking-wider text-app-text-faint uppercase"
         >
           Skills earned
         </p>
