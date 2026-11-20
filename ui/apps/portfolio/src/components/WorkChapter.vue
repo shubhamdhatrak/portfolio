@@ -63,9 +63,18 @@ const { isVisible, rootRef } = useInView();
         </span>
       </div>
 
-      <p class="mb-4 text-[0.9375rem] leading-relaxed text-app-text-subtle">
-        {{ chapter.description }}
-      </p>
+      <div class="mb-4 space-y-3">
+        <p class="text-[0.9375rem] leading-relaxed text-app-text-subtle">
+          {{ chapter.description }}
+        </p>
+        <p
+          v-for="(paragraph, index) in chapter.narrative"
+          :key="index"
+          class="text-[0.9375rem] leading-relaxed text-app-text-subtle"
+        >
+          {{ paragraph }}
+        </p>
+      </div>
 
       <ul class="mb-5 list-none p-0">
         <li
@@ -76,6 +85,19 @@ const { isVisible, rootRef } = useInView();
           {{ item }}
         </li>
       </ul>
+
+      <div v-if="chapter.links?.length" class="mb-5 flex flex-col gap-2">
+        <a
+          v-for="link in chapter.links"
+          :key="link.href"
+          :href="link.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-medium text-[var(--chapter-accent)] underline decoration-[var(--chapter-accent)]/40 underline-offset-2 transition-colors duration-200 hover:decoration-[var(--chapter-accent)]"
+        >
+          {{ link.label }}
+        </a>
+      </div>
 
       <div>
         <p
